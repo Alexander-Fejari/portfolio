@@ -1,0 +1,11 @@
+@import '../../styles/global/variables';
+
+
+.landing {
+  max-height: 100vh;
+  height: 100%;
+  margin: 4rem 0;
+  h2 {
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,11 @@
+@import '../../styles/global/variables';
+
+.landing {
+  margin-top: 4.5rem;
+  padding-top: 7.5rem;
+  &
+  h2 {
+    font-size: 5rem;
+    text-transform: uppercase;
+  }
+}

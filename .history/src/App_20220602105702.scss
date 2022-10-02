@@ -1,0 +1,8 @@
+@import './styles/global/variables';
+
+body {
+  background-color: $bod;
+  font-family: $font-family-sans-serif, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

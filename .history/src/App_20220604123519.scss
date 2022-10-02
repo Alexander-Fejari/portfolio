@@ -1,0 +1,27 @@
+@import './styles/global/variables';
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: $body-bg;
+  color: $body-color;
+  font-family: $font-family-sans-serif, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+    pad
+  }
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+  li {
+    list-style: none;
+  }
+}

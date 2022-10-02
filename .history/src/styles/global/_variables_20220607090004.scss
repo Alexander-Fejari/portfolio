@@ -1,0 +1,27 @@
+// Setting colors.
+$white: #fcfcfc;
+$primary: #02070e;
+$secondary: #f5df4d;
+$grey: #d
+
+// Setting font-variables
+$font-family-sans-serif: 'Neue Montreal', sans-serif;
+$headings-font-family: 'Playfair Display', serif;
+
+// Settings for the `<body>` element.
+$body-bg: $primary;
+$body-color: $white;
+
+// Style anchor elements.
+$link-color: $secondary;
+$link-decoration: none;
+
+//Navbar
+$nav-tabs-link-active-color: $secondary;
+$navbar-dark-toggler-icon-bg: none;
+$transition-collapse: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+// global class
+.border-b {
+  border-bottom: 1px solid $secondary;
+}

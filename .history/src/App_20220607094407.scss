@@ -1,0 +1,33 @@
+@import './styles/global/variables';
+
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  width: 100%;
+  background-color: $body-bg;
+  color: $body-color;
+  font-family: $font-family-sans-serif, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  .App {
+    height: -webkit-fill-available;
+    padding: 0 2rem;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    .navbar {
+      
+    }
+  }
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+  li {
+    list-style: none;
+  }
+}

@@ -1,0 +1,42 @@
+@import './styles/global/variables';
+
+body {
+  min-height: 100vh;
+  min-height: fill-available;
+  min-height: -webkit-fill-available;
+  width: 100%;
+  background-color: $body-bg;
+  color: $body-color;
+  font-family: $font-family-sans-serif, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  .App {
+    height: 100%;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    padding: 0 2rem;
+  }
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+  li {
+    list-style: none;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+  }
+}

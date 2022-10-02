@@ -1,0 +1,26 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.active {
+  border-bottom: 1px solid $secondary;
+  width: 0;
+  animation: sli duration timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes slideLeftToRight {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}

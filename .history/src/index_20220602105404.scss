@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  font-family: $font-family-sans-serif, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+//global style
+@import './styles/global/reset';
+@import './styles/global/variables';
