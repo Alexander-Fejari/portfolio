@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { gsap } from 'gsap';
 import { Link, NavLink } from 'react-router-dom';
 import Style from './Navbar.module.scss';
 
@@ -9,6 +10,7 @@ const Navbar = () => {
     setIsActive(!isActive);
   };
 
+
   return (
     <header className={Style.navBarHeader}>
       <Link className={Style.navBarHeaderBrand} to='/'>
@@ -17,7 +19,7 @@ const Navbar = () => {
       <nav className={isActive ? Style.navBarMobile : Style.navBar}>
         <ul className={Style.navBarList}>
           <li className={Style.navBarListItem}>
-            <Link className={Style.navBarListLink} to='/a_propos'>
+            <NavLink className={Style.navBarListLink} to='/a_propos'>
               <div className={Style.original}>
                 <span>à</span>
                 <span>&nbsp;</span>
@@ -38,7 +40,7 @@ const Navbar = () => {
                 <span>o</span>
                 <span>s</span>
               </div>
-            </Link>
+            </NavLink>
           </li>
           <li className={Style.navBarListItem}>
             <NavLink className={Style.navBarListLink} to='/projets'>
