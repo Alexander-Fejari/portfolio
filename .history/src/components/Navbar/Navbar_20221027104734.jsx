@@ -17,7 +17,8 @@ const Navbar = () => {
       <nav className={isActive ? Style.navBarMobile : Style.navBar}>
         <ul className={Style.navBarList}>
           <li className={Style.navBarListItem}>
-            <Link className={Style.navBarListLink} to='/a_propos'>
+            <Link className={Style.navBarListLink} to='/a_propos' onClick={ toggleNavBar
+            }>
               <div className={Style.original}>
                 <span>à</span>
                 <span>&nbsp;</span>

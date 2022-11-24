@@ -3,7 +3,7 @@ import './App.scss';
 import { Landing, Navbar } from './components/index';
 
 function App() {
-  //création ref GSAP pour l'element root
+  //cré
   const gsapRootLevel = useRef()
 
   return (

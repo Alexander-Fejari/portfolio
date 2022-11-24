@@ -17,7 +17,7 @@ const Navbar = () => {
       <nav className={isActive ? Style.navBarMobile : Style.navBar}>
         <ul className={Style.navBarList}>
           <li className={Style.navBarListItem}>
-            <Link className={Style.navBarListLink} to='/a_propos'>
+            <NavLink className={Style.navBarListLink} to='/a_propos' onC>
               <div className={Style.original}>
                 <span>à</span>
                 <span>&nbsp;</span>
@@ -38,7 +38,7 @@ const Navbar = () => {
                 <span>o</span>
                 <span>s</span>
               </div>
-            </Link>
+            </NavLink>
           </li>
           <li className={Style.navBarListItem}>
             <NavLink className={Style.navBarListLink} to='/projets'>
