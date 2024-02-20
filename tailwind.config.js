@@ -52,6 +52,11 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      // add new font family
+      fontFamily: {
+        heading: ["Syne", 'sans-serif'],
+        sans: ['Rubik', 'sans-serif'],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

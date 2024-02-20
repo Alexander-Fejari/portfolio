@@ -13,6 +13,7 @@ interface Props {
 const NavbarLinks = ({links, className}: Props) => {
     const containerRef = useRef<HTMLUListElement | null>(null);
 
+    // Animation fadeIn link
     useGSAP(() => {
         gsap.to('.navLink', {
             opacity: 1,
@@ -21,6 +22,9 @@ const NavbarLinks = ({links, className}: Props) => {
             delay: 0.6
         });
     }, {scope: containerRef});
+
+    // Animation hover on desktop
+    
 
     return (
         <ul ref={containerRef}

@@ -37,12 +37,11 @@ const NavBar = () => {
                     <ModeToggle/>
                 </section>
                 {/* desktop */}
-                <section className={'md:w-1/2 hidden md:flex md:justify-end md:items-center md:gap-16'}>
-
+                <section className={'md:w-1/2 hidden md:flex md:justify-end md:items-center md:gap-8'}>
                     <section className={'w-auto md:flex md:justify-center'}>
                         <NavBarLinks links={navItems}/>
                     </section>
-                    <section className={'w-auto md:flex md:justify-center pr-8'}>
+                    <section className={'w-auto md:flex md:justify-center'}>
                     <ModeToggle/>
                 </section>
                 </section>
