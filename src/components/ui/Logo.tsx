@@ -6,7 +6,7 @@ interface LogoProps {
 
 const Logo = ({ size, color }: LogoProps) => {
     // Déterminez la classe de couleur en fonction de la couleur passée
-    const fillColorClass = color ? `${color}` : 'fill-primary dark:fill-white';
+    const fillColorClass = color ? `${color}` : 'fill-primary';
 
     return (
         <svg

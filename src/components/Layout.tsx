@@ -1,3 +1,4 @@
+// Layout.tsx
 import {ReactNode} from "react";
 import NavBar from "@/components/ui/NavBar";
 
@@ -8,15 +9,15 @@ interface LayoutProps {
 const Layout = ({children}: LayoutProps) => {
     return (
         <>
-            <section className='w-full h-dvh p-6'>
+            <section className='w-full h-dvh'>
                 <header
                     className={
-                        "min-h-20 max-h-28 p-6 w-full fixed top-0 left-0 backdrop-blur"
+                        "min-h-20 max-h-28 p-6 w-full fixed top-0 left-0 backdrop-blur-lg"
                     }
                 >
                     <NavBar/>
                 </header>
-                <main>
+                <main className={' p-6'}>
                     {children}
                 </main>
                 <footer></footer>

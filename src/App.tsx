@@ -15,7 +15,7 @@ function App() {
                 <Route path="*" element={<NotFound/>}/>
                 <Route index element={<Home/>}/>
                 <Route path="design" element={<DesignSystem/>}/>
-                <Route path="about-me" element={<AboutMe/>}/>
+                <Route path="about" element={<AboutMe/>}/>
                 <Route path="my-works" element={<MyWorks/>}/>
                 <Route path="contact" element={<Contact/>}/>
             </Route>
@@ -24,7 +24,7 @@ function App() {
 
     return (
         <>
-            <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+            <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
                 <RouterProvider router={router}/>
             </ThemeProvider>
         </>
