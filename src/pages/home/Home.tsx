@@ -15,6 +15,16 @@ const Home = () => {
         <Typography as={"h1"}>Home</Typography>
         <Typography as={"h1"}>Home</Typography>
         <Typography as={"h1"}>Home</Typography>
+        <Typography as={"h1"}>Home</Typography>
+        <Typography as={"h1"}>Home</Typography>
+        <Typography as={"h1"}>Home</Typography>
+        <Typography as={"h1"}>Home</Typography>
+        <Typography as={"h1"}>Home</Typography>
+        <Typography as={"h1"}>Home</Typography>
+        <Typography as={"h1"}>Home</Typography>
+        <Typography as={"h1"}>Home</Typography>
+        <Typography as={"h1"}>Home</Typography>
+        <Typography as={"h1"}>Home</Typography>
       </Layout>
     </>
   );

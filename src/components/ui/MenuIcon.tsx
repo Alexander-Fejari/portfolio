@@ -1,17 +1,16 @@
-import {useRef} from "react";
-import {useToggle} from "@/hooks/useToggle";
+// MenuIcon.tsx
+import {useEffect, useRef} from "react";
 import {gsap} from "gsap";
-import {useGSAP} from "@gsap/react";
 
 interface MenuIconProps {
     size: number;
+    toggleMenu: () => void;
+    isActive: boolean;
     className?: string;
 }
 
-const MenuIcon = ({size, className}: MenuIconProps) => {
+const MenuIcon = ({size, toggleMenu, isActive, className}: MenuIconProps) => {
     const svgRef = useRef<SVGSVGElement>(null);
-
-    const {isActive: isMenuOpen, toggleMenu} = useToggle();
 
     const animateMenuOpen = () => {
         gsap.to(svgRef.current, {y: 0, x: 4, duration: 0.3});
@@ -27,13 +26,14 @@ const MenuIcon = ({size, className}: MenuIconProps) => {
         gsap.to(".line3", {rotation: 0, x: 0, y: 0, duration: 0.3});
     };
 
-    useGSAP(() => {
-        if (isMenuOpen) {
+    // Utilisation de useEffect pour détecter les changements de isActive et lancer les animations en conséquence
+    useEffect(() => {
+        if (isActive) {
             animateMenuOpen();
         } else {
             animateMenuClose();
         }
-    }, [isMenuOpen]);
+    }, [isActive]);
 
     return (
         <svg
