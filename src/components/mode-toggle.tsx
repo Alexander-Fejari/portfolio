@@ -9,7 +9,7 @@ export function ModeToggle() {
     return (
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
-                <Button variant="outline">
+                <Button className={'w-full h-full'} variant="outline">
                     <CiLight
                         className="absolute fill-primary h-[1.5rem] w-[1.5rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"/>
                     <CiDark
@@ -17,7 +17,7 @@ export function ModeToggle() {
                     <span className="sr-only">Toggle theme</span>
                 </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align={'center'} >
+            <DropdownMenuContent align={'center'}>
                 <DropdownMenuItem onClick={() => setTheme("light")}>
                     <CiLight className={'fill-primary h-[1.5rem] w-[1.5rem]'}></CiLight>
                 </DropdownMenuItem>
