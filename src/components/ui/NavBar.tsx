@@ -40,9 +40,9 @@ const NavBar = ({isActive, toggleMenu}: NavBarProps) => {
                 ease: 'power2.inOut'
             })
                 .to(containerRef.current, {
-                    height: 0,
-                    duration: 0.5,
-                    ease: 'power2.inOut'
+                        height: 0,
+                        duration: 0.5,
+                        ease: 'power2.inOut'
                     }, '-=0.5'
                 )
                 .to(containerRef.current, {
