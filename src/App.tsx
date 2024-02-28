@@ -7,7 +7,6 @@ import MyWorks from "@/pages/myWorks/MyWorks";
 import NotFound from "@/pages/notFound/notFound";
 import Contact from "@/pages/contact/Contact";
 import AboutMe from "@/pages/aboutMe/AboutMe";
-
 function App() {
     const router = createBrowserRouter(
         createRoutesFromElements(

@@ -35,19 +35,19 @@ const Typography = ({as: Element, children, className}: TypographyProps) => {
     let classes = className || ''
     switch (Element) {
         case 'h1':
-            classes += ' dark:text-white font-heading font-bold text-4xl md:text-5xl';
+            classes += ' dark:text-white font-heading font-bold text-6xl md:text-7xl';
             break;
         case 'h2':
-            classes += ' dark:text-white font-heading font-bold text-3xl md:text-4xl';
+            classes += ' dark:text-white font-heading font-bold text-5xl md:text-6xl';
             break;
         case 'h3':
-            classes += ' dark:text-white font-heading font-bold text-2xl md:text-3xl';
+            classes += ' dark:text-white font-heading font-bold text-3xl md:text-4xl';
             break;
         case 'h4':
-            classes += ' dark:text-white font-heading font-medium text-xl';
+            classes += ' dark:text-white font-heading font-medium text-2xl';
             break;
         case 'h5':
-            classes += ' dark:text-white md:text-xl';
+            classes += ' dark:text-white text-xl';
             break;
         default:
             break;
