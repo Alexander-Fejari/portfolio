@@ -16,12 +16,14 @@ const NotFound = () => {
 
 
     useEffect(() => {
+        /*Cursor*/
         gsap.fromTo(cursorRef.current, {autoAlpha: 0, x: -20}, {
             autoAlpha: 1,
             duration: 0.5,
             repeat: -1,
             ease: SteppedEase.config(1)
         });
+        /*Text Split*/
         gsap.to(errorMsgRef.current, {
             text: {value: "404"},
             duration: 1,
