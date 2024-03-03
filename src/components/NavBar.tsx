@@ -1,9 +1,9 @@
 import React, {useEffect, useRef} from 'react';
-import Logo from "@/components/ui/Logo";
+import Logo from "@/components/Logo";
 import {ModeToggle} from "@/components/mode-toggle";
-import NavBarLinks from "@/components/ui/NavBarLinks";
+import NavBarLinks from "@/components/NavBarLinks";
 import {NavItem} from '@/types/types';
-import MenuIcon from "@/components/ui/MenuIcon";
+import MenuIcon from "@/components/MenuIcon";
 import gsap from "gsap";
 
 interface NavBarProps {

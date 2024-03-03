@@ -1,6 +1,7 @@
 import {ReactNode, useEffect, useState} from "react";
-import NavBar from "@/components/ui/NavBar";
-import {useToggle} from '@/hooks/useToggle'; // Importez le hook useToggle
+import NavBar from "@/components/NavBar";
+import {useToggle} from '@/hooks/useToggle';
+import Footer from "@/components/Footer"; // Importez le hook useToggle
 
 interface LayoutProps {
     children: ReactNode;
@@ -28,10 +29,12 @@ const Layout = ({children}: LayoutProps) => {
                     {/*Passez isActive et toggleMenu au composant NavBar*/}
                     <NavBar isActive={isActive} toggleMenu={toggleMenu}/>
                 </header>
-                <main className={'p-6'}>
+                <main className={'h-full p-6 pt-24'}>
                     {children}
                 </main>
-                <footer></footer>
+                <footer className={'min-h-20 max-h-28 p-6'}>
+                    <Footer/>
+                </footer>
             </section>
         </>
     );
