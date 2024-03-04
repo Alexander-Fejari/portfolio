@@ -29,7 +29,7 @@ const NavbarLinks = ({links, className}: Props) => {
         const underline = event.currentTarget.querySelector('.underline') as HTMLElement;
         gsap.to(underline, {
             width: '100%',
-            duration: 0.3,
+            duration: 0.2,
             ease: 'power2.inOut'
         });
     };
@@ -48,7 +48,7 @@ const NavbarLinks = ({links, className}: Props) => {
             {links.map((link, index) => (
                 <li key={index}>
                     <NavLink
-                        className={'navLink text-border uppercase opacity-0 font-bold text-muted-foreground relative'}
+                        className={'navLink text-border uppercase opacity-0 font-bold text-muted-foreground relative break-words'}
                         to={link.path}
                         onMouseEnter={handleHover}
                         onMouseLeave={handleHoverOut}>
