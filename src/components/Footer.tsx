@@ -4,20 +4,21 @@ import Typography from "@/components/Typography";
 const Footer = () => {
     return (
         <>
-            <section className={'w-full flex flex-col justify-center items-center gap-y-4'}>
-                <section className="flex gap-x-4">
-                    <SocialIcon size={'24'}/>
-                </section>
-                <section className=" flex">
-                    <Typography as={'cite'}>
-                        Alexander
-                        <Typography as={'em'} className={'text-primary'}> © </Typography>
+            <section
+                className={'pt-6 w-full flex justify-between items-center border-t border-primary/30 dark:border-white/30'}>
+                <section className='flex items-center gap-x-4 md:gap-x-8'>
+                    <Typography className={'uppercase flex flex-col text-right '} as={'p'}>
+                        Alexander <br/>
                         Fejari
                     </Typography>
+                    <section className="w-[.125rem] h-10 rounded bg-primary"></section>
+                    <Typography className={'uppercase'} as={'p'}>
+                        Portfolio <br/>
+                        2024 ©
+                    </Typography>
                 </section>
-
+                <SocialIcon size={'36'}/>
             </section>
-
         </>
     )
 }

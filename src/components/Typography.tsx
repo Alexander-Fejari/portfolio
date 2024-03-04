@@ -19,7 +19,6 @@ type AllowedElements =
     | 'small'
     | 'sub'
     | 'sup'
-    | 'br'
     | 'hr';
 
 // Définir les types pour les props

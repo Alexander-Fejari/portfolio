@@ -27,17 +27,18 @@ const SocialIcon = ({size}: SocialIcon) => {
             break;
         default:
             break;
-
     }
 
     return (
         <>
-            <a href='https://www.linkedin.com/in/alexander-fejari-5a7802167' target='_blank' onClick={handleLinkedInClick}>
-                <FaLinkedin className={`${sizeClasses}`} />
-            </a>
-            <a href='https://github.com/Alexander-Fejari' target='_blank' onClick={handleGithubClick}>
-                <FaSquareGithub className={`${sizeClasses}`}/>
-            </a>
+            <nav className={'flex items-center gap-x-2'}>
+                <Link className={'transition-all ease-in-out duration-300 hover:text-primary'} to='https://www.linkedin.com/in/alexander-fejari-5a7802167' target='_blank' onClick={handleLinkedInClick}>
+                    <FaLinkedin className={`${sizeClasses}`} />
+                </Link>
+                <Link className={'transition-all ease-in-out duration-300 hover:text-primary'} to='https://github.com/Alexander-Fejari' target='_blank' onClick={handleGithubClick}>
+                    <FaSquareGithub className={`${sizeClasses}`}/>
+                </Link>
+            </nav>
         </>
     )
 }
