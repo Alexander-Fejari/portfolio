@@ -55,7 +55,7 @@ module.exports = {
       // add new font family
       fontFamily: {
         heading: ["Syne", 'sans-serif'],
-        sans: ['Rubik', 'sans-serif'],
+        sans: ["IBM Plex Mono", 'monospace'],
       },
       borderRadius: {
         lg: "var(--radius)",
