@@ -33,8 +33,8 @@ const Layout = ({children}: LayoutProps) => {
                 <main className={'h-full p-6 pt-32'}>
                     {children}
                 </main>
-                <Divide divideHeight={'sm'} divideLength={'fitContent'}/>
-                <footer className={'min-h-20 max-h-28 p-6'}>
+               <Divide divideHeight={'sm'} divideLength={'fitContent'}/>
+                 <footer className={'min-h-20 max-h-28 p-6'}>
                     <Footer/>
                 </footer>
             </section>

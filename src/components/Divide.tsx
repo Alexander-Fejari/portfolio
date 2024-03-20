@@ -26,7 +26,7 @@ const Divide = ({divideHeight, divideLength, className}: DivideProps) => {
             lengthClasses = 'w-1/2 mx-auto'
             break;
         case 'start':
-            lengthClasses = 'w-1/2'
+            lengthClasses = 'w-72 md:w-96'
             break;
     }
 
